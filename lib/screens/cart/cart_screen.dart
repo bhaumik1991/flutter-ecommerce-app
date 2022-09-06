@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../widgets/custom_appbar.dart';
+import '../../widgets/custom_navbar.dart';
+
 class CartScreen extends StatelessWidget {
   const CartScreen({Key? key}) : super(key: key);
 
@@ -14,6 +17,11 @@ class CartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+      appBar: CustomAppBar(
+          title: "Cart"
+      ),
+      bottomNavigationBar: CustomNavBar(),
+    );
   }
 }
